@@ -16,8 +16,16 @@
     <!-- Hero card -->
     <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
       <!-- Banner image -->
-      <div class="h-48 sm:h-56 bg-cover bg-center" style="background-image: url('images/tokyo.jpg');">
-        <div class="h-full w-full bg-black/30 flex items-end p-6">
+      <div class="relative h-48 sm:h-56 overflow-hidden">
+        <img
+          src="images/tokyo-768w.jpg"
+          srcset="images/tokyo-480w.jpg 480w, images/tokyo-768w.jpg 768w, images/tokyo-1024w.jpg 1024w, images/tokyo-1536w.jpg 1536w, images/tokyo-3043w.jpg 3043w"
+          sizes="(max-width: 512px) 100vw, 512px"
+          alt="Tokyo cityscape"
+          class="absolute inset-0 w-full h-full object-cover object-center"
+          loading="eager"
+        >
+        <div class="absolute inset-0 bg-black/30 flex items-end p-6">
           <h1 class="text-3xl sm:text-4xl font-bold tracking-tight drop-shadow-lg">Jeff Hu</h1>
         </div>
       </div>
